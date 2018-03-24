@@ -1,0 +1,106 @@
+body {
+  min-width: 211px;
+  /*background-color: #5b5b5b;*/
+  background-color: #393939;
+}
+
+html {
+  font-size: 10px;
+}
+
+button {
+  margin: 0.1rem 0 0.1rem 0;
+  padding: 0;
+  border: 0;
+  height: 5rem;
+  width: 5rem;
+  font-size: 3.6rem;
+  border-radius: 0.5rem;
+
+  background-color: #393939;
+  color: white;
+}
+
+
+button:hover {
+  color: #519aba;
+  background-color: white;
+}
+
+/*on keypress*/
+button:active {
+  background-color: lightblue;
+}
+
+/*get rid of dashed border that appears after keypress*/
+button::-moz-focus-inner {
+  border: 0;
+}
+
+button[value="c"] {
+  /*background-color: #c0392b;*/
+  background-color: #c00000;
+}
+
+button[value="c"]:hover, button[value="="]:hover {
+  background-color: white;
+}
+
+button[value="="] {
+  background-color: green;
+}
+
+/*screen output using flex box*/
+.output {
+  margin: 2.4rem 0 0 0;
+  font-family: 'VT323', monospace;
+  font-size: 4rem;
+  color: #393939;
+}
+
+.err {
+  font-size: 2.6rem;
+}
+
+.calculator {
+  width: 22rem;
+  height: 38.5rem;
+  padding-top: 0.5rem;
+  margin: 15rem auto 0 auto;
+  border: 0.1rem solid #191919;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem #191919;
+  background-color: grey;
+  text-align: center;
+}
+
+/*screen is flex container*/
+.screen {
+  display: flex;
+  justify-content: flex-end;
+  border: 0.1rem solid transparent;
+  margin: 0 auto;
+  padding-right: 0.5rem;
+  height: 10rem;
+  width: 20.3rem;
+  border-radius: 1rem;
+  background-color: #c3c2ab;
+}
+
+.row {
+  height: 5.5rem;
+}
+
+/*space between buttons and screen*/
+.row:nth-child(2) {
+  padding-top: 0.5rem;
+}
+
+footer p {
+  margin: 3rem auto 0 auto;
+  text-align: center;
+  font-family: 'Rock Salt', cursive;
+  color: #d1ccb6;
+  opacity: 0.3;
+  font-size: 1.6rem;
+}
